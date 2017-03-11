@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.8)
+# set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+PROJECT(GP C CXX)
+
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(CMAKE_MODULE_PATH ${GP_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
+#set(CMAKE_EXE_LINKER_FLAGS "-static")
+add_subdirectory(src bin)

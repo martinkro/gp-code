@@ -1,0 +1,1 @@
+..\bin\bin\gp.exe Game.exe
